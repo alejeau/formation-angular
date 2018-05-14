@@ -27,7 +27,8 @@ export const RECIPES: Recipe[] = <Recipe[]> [
       'Add all the ingredients to a shaker and fill with ice.',
       'Shake, and strain into a chilled Martini glass.',
       'Garnish with a lime wheel.'
-    ]
+    ],
+    id: 1
   },
   {
     name: 'Piña Colada',
@@ -55,7 +56,8 @@ export const RECIPES: Recipe[] = <Recipe[]> [
       'Add all the ingredients to a shaker and fill with ice.',
       'Shake, and strain into a Hurricane glass filled with fresh ice.',
       'Garnish with a cherry and a pineapple wedge.'
-    ]
+    ],
+    id: 2
   },
   {
     name: 'Mojito',
@@ -93,6 +95,7 @@ export const RECIPES: Recipe[] = <Recipe[]> [
       'Add the simple syrup, lime juice and rum, and fill with ice.',
       'Shake well and pour (unstrained) into a highball glass.',
       'Top with the club soda and garnish with a mint sprig.'
-    ]
+    ],
+    id: 3
   }
 ];

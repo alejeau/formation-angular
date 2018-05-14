@@ -6,7 +6,7 @@ import {Recipe} from './recipe.model';
   templateUrl: './recipe.component.html',
   styleUrls: ['./recipe.component.scss']
 })
-export class RecipeComponent implements OnInit{
+export class RecipeComponent implements OnInit {
 
   @Input()
   recipe: Recipe;
