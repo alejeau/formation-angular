@@ -1,4 +1,4 @@
-<mat-card>
+<mat-card class="map">
   <div>
     <mat-card-header>
       <mat-card-title>
@@ -6,9 +6,9 @@
       </mat-card-title>
     </mat-card-header>
     <mat-card-subtitle>
-      <img mat-card-image [src]="recipe.picture">
       <span>{{ recipe.description }}</span>
     </mat-card-subtitle>
+    <img mat-card-image [src]="recipe.picture">
   </div>
   <mat-card-content *ngIf="display">
     <h3>Ingredients:</h3>
