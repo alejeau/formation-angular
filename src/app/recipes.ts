@@ -28,7 +28,7 @@ export const RECIPES: Recipe[] = <Recipe[]> [
       'Shake, and strain into a chilled Martini glass.',
       'Garnish with a lime wheel.'
     ],
-    id: 1
+    id: 0
   },
   {
     name: 'Piña Colada',
@@ -57,7 +57,7 @@ export const RECIPES: Recipe[] = <Recipe[]> [
       'Shake, and strain into a Hurricane glass filled with fresh ice.',
       'Garnish with a cherry and a pineapple wedge.'
     ],
-    id: 2
+    id: 1
   },
   {
     name: 'Mojito',
@@ -96,6 +96,6 @@ export const RECIPES: Recipe[] = <Recipe[]> [
       'Shake well and pour (unstrained) into a highball glass.',
       'Top with the club soda and garnish with a mint sprig.'
     ],
-    id: 3
+    id: 2
   }
 ];
