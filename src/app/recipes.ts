@@ -1,6 +1,6 @@
 import { Recipe } from './recipe/recipe.model';
 
-export const recipes: Recipe[] = <Recipe[]> [
+export const RECIPES: Recipe[] = <Recipe[]> [
   {
     name: 'Daiquiri',
     picture: 'https://cdn.liquor.com/wp-content/uploads/2016/07/29105024/DAIQUIRI-226x248-mosaic1.jpg',
