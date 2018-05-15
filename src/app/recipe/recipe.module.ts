@@ -6,6 +6,7 @@ import {CustomMaterialModule} from '../custom-material/custom-material.module';
 import {RouterModule} from '@angular/router';
 import {RecipeService} from './recipe.service';
 import {ToArrayPipe} from './to-array.pipe';
+import {RecipeDetailComponent} from '../recipe-detail/recipe-detail.component';
 
 @NgModule({
   imports: [
@@ -20,6 +21,7 @@ import {ToArrayPipe} from './to-array.pipe';
   declarations: [
     RecipeComponent,
     RecipesComponent,
+    RecipeDetailComponent,
     ToArrayPipe
   ]
 })

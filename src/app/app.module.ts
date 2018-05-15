@@ -6,14 +6,12 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {CustomMaterialModule} from './custom-material/custom-material.module';
 import {AppRoutingModule} from './/app-routing.module';
 import {RecipeModule} from './recipe/recipe.module';
-import {RecipeDetailComponent} from './recipe-detail/recipe-detail.component';
 import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    RecipeDetailComponent
+    HeaderComponent
   ],
   imports: [
     BrowserAnimationsModule,
