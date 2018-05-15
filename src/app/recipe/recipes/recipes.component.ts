@@ -15,13 +15,13 @@ export class RecipesComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.refreshList();
-  }
-
-  refreshList(): void {
     this.recipeService.getRecipes().subscribe(
       recipes => this.recipes = recipes,
       error => console.error('There were errors retrieving the recipes: ', error)
     );
+  }
+
+  deleteRecipe(recipe: Recipe): void {
+    this.recipes.splice(this.recipes.indexOf(recipe), 1);
   }
 }

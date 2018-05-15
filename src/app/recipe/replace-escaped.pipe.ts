@@ -4,7 +4,7 @@ import {Pipe, PipeTransform} from '@angular/core';
   name: 'replaceEscaped'
 })
 export class ReplaceEscapedPipe implements PipeTransform {
-  transform(param: string): string[] {
+  transform(param: string): string {
     return param.replace('\\n', '\n').replace('\\’', '’');
   }
 
