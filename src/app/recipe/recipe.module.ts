@@ -8,7 +8,7 @@ import {RecipeService} from './recipe.service';
 import {ToArrayPipe} from './to-array.pipe';
 import {RecipeDetailComponent} from '../recipe-detail/recipe-detail.component';
 import {AddRecipeComponent} from '../add-recipe/add-recipe.component';
-import {FormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {ReplaceEscapedPipe} from './replace-escaped.pipe';
 
 @NgModule({
@@ -16,7 +16,8 @@ import {ReplaceEscapedPipe} from './replace-escaped.pipe';
     CommonModule,
     CustomMaterialModule,
     RouterModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
     RecipesComponent

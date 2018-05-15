@@ -1,26 +1,27 @@
 <div class="container">
-  <h1>Add new recipe: {{ recipe.name }}</h1>
-  <form>
+  <h1>Add new recipe</h1>
+  <form [formGroup]="recipeForm" >
     <div class="form-group">
       <label for="name">Name: </label>
-      <input [(ngModel)]="recipe.name" name="name" type="text" class="form-control" id="name" placeholder="{{ recipe.name }}" required>
+      <input name="name" type="text" class="form-control" id="name" formControlName="name" required>
     </div>
 
     <div class="form-group">
       <label for="picture">Picture link: </label>
-      <input [(ngModel)]="recipe.picture" name="picture" type="text" class="form-control" id="picture">
+      <input name="picture" type="text" class="form-control" id="picture" formControlName="url">
     </div>
 
     <div class="form-group">
       <label for="description">Description: </label>
-      <textarea [(ngModel)]="recipe.description" name="picture" type="text" class="form-control" id="description"></textarea>
+      <textarea name="picture" type="text" class="form-control" id="description" formControlName="desc"></textarea>
     </div>
 
     <div class="form-group">
       <label for="instructions">Instructions: </label>
-      <textarea [(ngModel)]="recipe.instructions" name="picture" type="text" class="form-control" id="instructions"></textarea>
+      <textarea name="picture" type="text" class="form-control" id="instructions" formControlName="instr"></textarea>
     </div>
 
     <button (click)="addRecipe()">ADD</button>
   </form>
 </div>
+<p>Form status: {{ recipeForm.status | json }}</p>
