@@ -1,5 +1,4 @@
-import { Injectable } from '@angular/core';
-import {Observable, of} from 'rxjs';
+import {Injectable} from '@angular/core';
 import {Recipe} from './recipe.model';
 import {RECIPES} from '../recipes';
 
@@ -16,5 +15,9 @@ export class RecipeService {
 
   getRecipes(): Recipe[] {
     return RECIPES;
+  }
+
+  getRecipeById(id: string) {
+    return RECIPES[id];
   }
 }
