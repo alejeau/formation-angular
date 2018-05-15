@@ -3,6 +3,7 @@ import {CommonModule} from '@angular/common';
 import {RouterModule, Routes} from '@angular/router';
 import {RecipesComponent} from './recipe/recipes/recipes.component';
 import {RecipeDetailComponent} from './recipe-detail/recipe-detail.component';
+import {AddRecipeComponent} from './add-recipe/add-recipe.component';
 
 const routes: Routes = [
   {
@@ -13,6 +14,11 @@ const routes: Routes = [
   {
     path: 'recipes/:id',
     component: RecipeDetailComponent,
+    pathMatch: 'full'
+  },
+  {
+    path: 'recipe/add',
+    component: AddRecipeComponent,
     pathMatch: 'full'
   },
   {

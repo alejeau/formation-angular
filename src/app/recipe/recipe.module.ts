@@ -7,12 +7,16 @@ import {RouterModule} from '@angular/router';
 import {RecipeService} from './recipe.service';
 import {ToArrayPipe} from './to-array.pipe';
 import {RecipeDetailComponent} from '../recipe-detail/recipe-detail.component';
+import {AddRecipeComponent} from '../add-recipe/add-recipe.component';
+import {FormsModule} from '@angular/forms';
+import {ReplaceEscapedPipe} from './replace-escaped.pipe';
 
 @NgModule({
   imports: [
     CommonModule,
     CustomMaterialModule,
-    RouterModule
+    RouterModule,
+    FormsModule
   ],
   exports: [
     RecipesComponent
@@ -22,7 +26,9 @@ import {RecipeDetailComponent} from '../recipe-detail/recipe-detail.component';
     RecipeComponent,
     RecipesComponent,
     RecipeDetailComponent,
-    ToArrayPipe
+    AddRecipeComponent,
+    ToArrayPipe,
+    ReplaceEscapedPipe
   ]
 })
 export class RecipeModule { }

@@ -6,7 +6,7 @@
       </mat-card-title>
     </mat-card-header>
     <mat-card-subtitle>
-      <span>{{ recipe.description.replace('\\n', '\n').replace('\\’', '’') }}</span>
+      <span>{{ recipe.description | replaceEscaped}}</span>
     </mat-card-subtitle>
     <img mat-card-image [src]="recipe.picture">
   </div>

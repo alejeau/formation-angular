@@ -6,7 +6,7 @@ export class Recipe {
   picture: string;
   description: string;
   ingredients: Ingredient[];
-  instructions: string[];
+  instructions: string;
   id: number;
 
 }
