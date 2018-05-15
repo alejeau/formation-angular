@@ -15,7 +15,10 @@ export class RecipesComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.recipes = this.recipeService.getRecipes();
+    this.recipeService.getRecipes().subscribe(
+      recipes => this.recipes = recipes,
+      error => console.error('There were errors retrieving the recipes: ', error)
+    );
   }
 
 }
