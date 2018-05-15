@@ -38,9 +38,10 @@ export class AddRecipeComponent implements OnInit {
   }
 
   createForm() {
+    const urlPattern = '^https?:\\/\\/(www\\.)?[-a-zA-Z0-9@:%._\\+~#=]{2,256}\\.[a-z]{2,6}\\b([-a-zA-Z0-9@:%_\\+.~#?&//=]*)$';
     this.recipeForm = this.fb.group({
-      name: ['', Validators.required],
-      url: '',
+      name: ['', [Validators.required, Validators.minLength(3), Validators.maxLength(254)]],
+      url: ['', Validators.pattern(urlPattern)],
       desc: '',
       instr: '',
     });
