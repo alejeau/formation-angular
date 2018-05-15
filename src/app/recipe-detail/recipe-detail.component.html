@@ -1,4 +1,4 @@
-<mat-card class="map">
+<mat-card class="map" *ngIf="recipe">
   <div>
     <mat-card-header>
       <mat-card-title>
@@ -6,7 +6,7 @@
       </mat-card-title>
     </mat-card-header>
     <mat-card-subtitle>
-      <span>{{ recipe.description }}</span>
+      <span *ngIf="recipe.description">{{ recipe.description | replaceEscaped}}</span>
     </mat-card-subtitle>
     <img mat-card-image [src]="recipe.picture">
   </div>
@@ -22,7 +22,7 @@
 
     <br>
     <h3>Instructions:</h3>
-    <ul>
+    <ul *ngIf="recipe.instructions">
       <li *ngFor="let instruction of recipe.instructions | toArray">
         <span>{{ instruction }}</span>
       </li>
