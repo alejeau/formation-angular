@@ -14,10 +14,10 @@ export class AddRecipeComponent implements OnInit {
   recipeForm: FormGroup;
 
   constructor(private recipeService: RecipeService, private fb: FormBuilder) {
-    this.createForm();
   }
 
   ngOnInit() {
+    this.createForm();
     this.success = false;
   }
 
